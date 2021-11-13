@@ -1,5 +1,5 @@
 # Build stage
-FROM rust:1.45.0 as cargo-build
+FROM rust:1.56 as cargo-build
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends musl-tools
